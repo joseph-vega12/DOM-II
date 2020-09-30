@@ -13,7 +13,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-letsGoText.addEventListener("wheel", function(event){
+letsGoText.addEventListener("wheel", function (event) {
     event.preventDefault();
     // event.target.style.color = 'pink';
     event.target.style.fontSize = "80px";
@@ -33,10 +33,10 @@ const bottomImg = document.querySelector('.content-destination img');
 const button = document.querySelector(".btn");
 
 nav.addEventListener('focus', (event) => {
-    event.target.style.fontSize = '20px';  
+    event.target.style.fontSize = '20px';
 }, true);
 
-document.addEventListener("scroll", function(event){
+document.addEventListener("scroll", function (event) {
     setTimeout(() => {
         heroImg.style.display = "none";
     }, 1000)
@@ -44,13 +44,18 @@ document.addEventListener("scroll", function(event){
 
 // funBusText.addEventListener("select", function(event){
 // funBusText.textContent
-//     event.alert("HELLO CHANCHO");
+//     alert("HELLO CHANCHO");
 // });
 
-button.addEventListener("dblclick", function(event){
+button.addEventListener("dblclick", function (event) {
     event.target.style.background = "red";
-})
+});
 
+const body = document.querySelector("body");
+
+window.addEventListener("resize", function(event){
+    body.style.border = "30px dotted black";
+});
 
 
 
